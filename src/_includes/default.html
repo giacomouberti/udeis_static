@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -15,6 +15,7 @@
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
+
   </head>
   <body>
     {% include "./partials/navbar.html" %}
@@ -24,12 +25,12 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+    <script src="/static/js/darkmode.js"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
-
   </body>
 </html>

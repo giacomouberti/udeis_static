@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @variants dark {
+    .filter-invert {
+      filter: invert(1);
+    }
+  }
+}
+
 /*Your Custom CSS Goes here*/
 
 h1 {
