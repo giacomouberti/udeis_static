@@ -3,6 +3,7 @@ title: Benvenuti
 description: Capitalize on low hanging fruit to identify a ballpark value added
   activity to beta test. Override the digital divide with additional
   clickthroughs from DevOps.
+slug-url: questo è il mio primo post
 author: Giacomo Uberti
 date: 2020-09-01
 tags:
