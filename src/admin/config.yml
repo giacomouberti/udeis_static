@@ -8,6 +8,13 @@ backend:
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
+locale: 'it'
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 # publish_mode: editorial_workflow
@@ -21,6 +28,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Slug", name: "slug-url", widget: "string"}
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -30,6 +38,7 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+      slug: {{slug-url}}
   - label: "Settings"
     name: "settings"
     editor:
